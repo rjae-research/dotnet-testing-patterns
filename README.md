@@ -1,3 +1,6 @@
+# dotnet-testing-patterns
+https://github.com/rjae-testing/dotnet-testing-patterns/workflows/Integration/badge.svg
+
 # Contents
 
 * [Unit Testing](#Unit-Testing)
