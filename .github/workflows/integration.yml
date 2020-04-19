@@ -29,3 +29,8 @@ jobs:
       run: dotnet test --no-restore --verbosity normal --filter Category!=System /p:CollectCoverage=true /p:CoverletOutputFormat=OpenCover /p:Exclude=\"[xunit.*]*,[*]*.Migrations.*\" /p:ExcludeByAttribute=\"Obsolete,GeneratedCodeAttribute,CompilerGeneratedAttribute\"
     - name: Report
       run: dotnet tool install --global dotnet-reportgenerator-globaltool; ~/.dotnet/tools/reportgenerator \"-reports:**/*Tests*/coverage.opencover.xml\" \"-targetdir:coverage-reports\"
+    - name: Upload
+      uses: actions/upload-artifact@v1
+      with:
+        name: Coverage
+        path: coverage-reports
