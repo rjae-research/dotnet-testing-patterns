@@ -1,5 +1,5 @@
 # dotnet-testing-patterns
-https://github.com/rjae-testing/dotnet-testing-patterns/workflows/Integration/badge.svg
+![](https://github.com/rjae-testing/dotnet-testing-patterns/workflows/Integration/badge.svg)
 
 # Contents
 
